@@ -13,6 +13,6 @@ Flutter와 Back End 역량을 증진시키기 위해 진행하는 프로젝트
 8. 추후에 추가
 
 ## 작업 툴 및 스택
-디자인 - Figma
-앱 - Flutter
-백엔드 - Django
+디자인 - Figma <br/>
+앱 - Flutter <br/>
+백엔드 - Django <br/>
