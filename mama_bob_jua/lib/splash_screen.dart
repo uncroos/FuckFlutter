@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
+import 'package:flutter/material.dart';
+import 'main_screen.dart';  // Assuming main_screen.dart is in the same directory
 
 class splash_screen extends StatefulWidget {
   const splash_screen({super.key});
@@ -12,9 +13,8 @@ class _splash_screenState extends State<splash_screen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () {
-      // 다른 화면으로 네비게이트
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) =>       ㅊㅊ())); // NextScreen은 다음 화면의 클래스 이름
+    Timer(Duration(seconds: 2), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => main_screen()));
     });
   }
 
@@ -34,18 +34,6 @@ class _splash_screenState extends State<splash_screen> {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-// NextScreen 클래스 정의
-class NextScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("새 화면"),
       ),
     );
   }
